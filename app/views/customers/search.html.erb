@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-lg-6">
+      <h4>Product info</h4>
+      <dl>
+        <dt>Product</dt>
+        <dd><%= @product['pname'] %></dd>
+        <dt>Customer</dt>
+        <dd><%= @Customer['names'] %></dd>
+      </dl>
+    </div>
+    <div class="col-lg-6">
+      <h4>Product Info</h4>
+      <dl>
+        <% @customer['list'].each do |customer| %>
+          <dt><%= customer['dt_txt'] %></dt>
+        <% end %>
+      </dl>
+    </div>
+  </div>
+</div>
